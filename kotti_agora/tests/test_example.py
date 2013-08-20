@@ -15,3 +15,16 @@ class TestExample:
         from kotti.resources import get_root
         root = get_root()
         assert root is not None
+
+
+class TestAgora:
+
+    def test_root(self, db_session):
+        from kotti.resources import get_root
+        root = get_root()
+        assert root is not None
+
+    def test_forum(self, db_session):
+        from kotti.resources import get_root
+        root = get_root()
+        assert root['forum'] is not None
