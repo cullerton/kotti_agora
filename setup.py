@@ -8,6 +8,10 @@ project = 'kotti_agora'
 
 install_requires=[
         'Kotti',
+        'plone.batching',
+        'AccessControl', # this is actually a dependency of plone.batching
+        'js.jquery_infinite_ajax_scroll',
+        'python-dateutil',
     ],
 
 here = os.path.abspath(os.path.dirname(__file__))
